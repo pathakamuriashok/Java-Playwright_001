@@ -16,7 +16,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
 			<Playwright-version>1.57.0</Playwright-version>
-		<TestNG.version>7.11.0</TestNG.version>
+		    <TestNG.version>7.11.0</TestNG.version>
+		    <suiteXmlFile-TestNG>${user.dir}\TestNG.xml</suiteXmlFile-TestNG>
 	</properties>
 
 <!-- 
@@ -98,9 +99,11 @@
 					
 					<configuration>
 					     <suiteXmlFiles>
-					                <TestNG-Suite>
-					                    ${user.dir}\TestNG.xml
-					                </TestNG-Suite>
+					           <!--    <suiteXmlFile>${user.dir}\TestNG.xml</suiteXmlFile>  
+					           <suiteXmlFile>D:\\Git\\Lab2 git\\Java-Playwright\\TestNG.xml</suiteXmlFile> -->
+					           
+					           <suiteXmlFile>${suiteXmlFile-TestNG}</suiteXmlFile>
+					           
 					     </suiteXmlFiles>
 					</configuration>
 					

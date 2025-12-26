@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Suite">
   <test name="Test">
+  
+<!--  <packages>
+            <package name="LTI_MindTree.Java_Playwright"/>
+    </packages>  -->
+    
+  
     <classes>
-      <class name="NewTest"/>
-    </classes>
+      <class name="LTI_MindTree.Java_Playwright.NewTest"/>
+    </classes> 
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

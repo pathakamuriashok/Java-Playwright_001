@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-25T17:11:23 IST" name="Default suite" finished-at="2025-12-25T17:12:11 IST" duration-ms="48333">
+  <suite started-at="2025-12-27T00:18:51 IST" name="Default suite" finished-at="2025-12-27T00:19:29 IST" duration-ms="38321">
     <groups>
     </groups>
-    <test started-at="2025-12-25T17:11:23 IST" name="Default test" finished-at="2025-12-25T17:12:11 IST" duration-ms="48333">
-      <class name="Playwright_Practice.BrowserLaunch_002">
-        <test-method signature="DirverSETUP()[pri:0, instance:Playwright_Practice.BrowserLaunch_002@35047d03]" started-at="2025-12-25T17:11:23 IST" name="DirverSETUP" finished-at="2025-12-25T17:12:11 IST" duration-ms="48254" status="PASS">
+    <test started-at="2025-12-27T00:18:51 IST" name="Default test" finished-at="2025-12-27T00:19:29 IST" duration-ms="38321">
+      <class name="Playwright_Methods.Click_ClickLinks">
+        <test-method signature="Click_001()[pri:0, instance:Playwright_Methods.Click_ClickLinks@35047d03]" started-at="2025-12-27T00:18:51 IST" name="Click_001" finished-at="2025-12-27T00:19:29 IST" duration-ms="37993" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DirverSETUP -->
-      </class> <!-- Playwright_Practice.BrowserLaunch_002 -->
+        </test-method> <!-- Click_001 -->
+      </class> <!-- Playwright_Methods.Click_ClickLinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
