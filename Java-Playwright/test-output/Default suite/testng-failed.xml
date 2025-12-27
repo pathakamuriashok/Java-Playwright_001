@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Playwright_Methods.EnterText_TextBoxes01">
+      <class name="Playwright_Methods.Dropdowns_001">
         <methods>
-          <include name="BrowserLaunch"/>
+          <include name="Dropdown_04"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- Playwright_Methods.EnterText_TextBoxes01 -->
+      </class> <!-- Playwright_Methods.Dropdowns_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
