@@ -2,8 +2,10 @@ package Playwright_Methods;
 
 import org.testng.annotations.Test;
 
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
@@ -36,6 +38,8 @@ public class Click_ClickLinks
 		
 		page.locator("//*[text()='Radio Button 2']").click();
 		
+	
+ 
 		Thread.sleep(10000); 
 		
 		browser.close();

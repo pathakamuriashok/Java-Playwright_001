@@ -1,6 +1,7 @@
 package Playwright_Methods;
-
+        
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 
 import java.util.List;
 
@@ -10,11 +11,11 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 import com.microsoft.playwright.Locator;
-
+        
 public class Dropdowns_003_GetCount 
-{
+{       
 	     Page page;
-	     Dropdowns_003_GetCount()
+	    Dropdowns_003_GetCount()
 		{
 			page=Playwright.create().chromium().launch(new LaunchOptions().setHeadless(false)).newPage();
 			
@@ -50,7 +51,6 @@ public class Dropdowns_003_GetCount
 			System.out.println("]]]]]]]]]]]]]]]]]]]]]]]]]]]]");
 			 for (String string : states) {
 				System.out.println(states);
-			}
-		
-		}
-}
+			}		
+		}		
+}       

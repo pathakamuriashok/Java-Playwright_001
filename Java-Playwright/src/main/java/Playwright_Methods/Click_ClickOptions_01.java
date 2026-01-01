@@ -39,6 +39,7 @@ public class Click_ClickOptions_01
     	   
     	   assertThat(page).hasTitle("DEMOQA");
     	   assertThat(page).hasTitle(Pattern.compile("DEMOQA"));
+   
     	   
        }
       
