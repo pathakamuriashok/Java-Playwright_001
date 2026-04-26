@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Playwright_Methods.Dropdowns_001">
+      <class name="Playwright_Methods.Click_ClickOptions_01">
         <methods>
-          <include name="Dropdown_04"/>
-          <include name="quit"/>
+          <include name="Quit"/>
+          <include name="NavigateToURL"/>
+          <include name="M1"/>
         </methods>
-      </class> <!-- Playwright_Methods.Dropdowns_001 -->
+      </class> <!-- Playwright_Methods.Click_ClickOptions_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

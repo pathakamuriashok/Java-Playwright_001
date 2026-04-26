@@ -1,6 +1,7 @@
 package Playwright_Methods;
 
 import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Browser;
@@ -39,7 +40,7 @@ public class Click_ClickOptions_01
     	   
     	   assertThat(page).hasTitle("DEMOQA");
     	   assertThat(page).hasTitle(Pattern.compile("DEMOQA"));
-   
+    	   
     	   
        }
       

@@ -2,6 +2,7 @@ package Playwright_Practice;
 
 import static org.testng.Assert.assertEquals;
 
+
 import org.testng.annotations.Test;
 
 import com.microsoft.playwright.BrowserType.LaunchOptions;
@@ -21,7 +22,7 @@ public class BrowserLaunch_002 {
 
 		System.out.println(page.title());
 		assertEquals(page.title(), "Account Login"); 
-
+		
 		page.locator("//*[contains(text(),' Home')]").click();
 		
 		page.locator("(//*[contains(text(),' Special')])[2]").click();

@@ -22,7 +22,7 @@ public class EnterText_TextBoxes01 {
 		
 		
 		/*
-		 * Below three locater are ID so we have used # symbol : like #name
+		 * Below three locater as ID so we have used # symbol : like #name
 		 * ,#inputEmail4 and #inputPassword4 here name ,inputEmail4 and inputPassword4
 		 * are ID's
 		 */
