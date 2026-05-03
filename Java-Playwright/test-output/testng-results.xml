@@ -1,107 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-02T23:32:08 IST" name="Default suite" finished-at="2026-05-02T23:33:01 IST" duration-ms="52769">
+  <suite started-at="2026-05-03T16:21:02 IST" name="Default suite" finished-at="2026-05-03T16:21:43 IST" duration-ms="40466">
     <groups>
     </groups>
-    <test started-at="2026-05-02T23:32:08 IST" name="Default test" finished-at="2026-05-02T23:33:01 IST" duration-ms="52769">
-      <class name="Frames_Handling.Handling_Frames_002">
-        <test-method is-config="true" signature="DriverSetUP()[pri:0, instance:Frames_Handling.Handling_Frames_002@4ac3c60d]" started-at="2026-05-02T23:32:08 IST" name="DriverSetUP" finished-at="2026-05-02T23:32:26 IST" duration-ms="17644" status="PASS">
+    <test started-at="2026-05-03T16:21:02 IST" name="Default test" finished-at="2026-05-03T16:21:43 IST" duration-ms="40466">
+      <class name="Window_PopUp_Handling.Handling_Window_PopUPs_001">
+        <test-method is-config="true" signature="ApplicationLaunch()[pri:0, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:02 IST" name="ApplicationLaunch" finished-at="2026-05-03T16:21:26 IST" duration-ms="24224" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DriverSetUP -->
-        <test-method signature="BrowserLaunch()[pri:1, instance:Frames_Handling.Handling_Frames_002@4ac3c60d]" started-at="2026-05-02T23:32:26 IST" name="BrowserLaunch" finished-at="2026-05-02T23:32:30 IST" duration-ms="4084" status="PASS">
+        </test-method> <!-- ApplicationLaunch -->
+        <test-method signature="PopUP_Window_01()[pri:1, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:26 IST" name="PopUP_Window_01" finished-at="2026-05-03T16:21:33 IST" duration-ms="6769" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserLaunch -->
-        <test-method signature="NestedFrames()[pri:2, instance:Frames_Handling.Handling_Frames_002@4ac3c60d]" started-at="2026-05-02T23:32:30 IST" name="NestedFrames" finished-at="2026-05-02T23:33:00 IST" duration-ms="30030" status="FAIL">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for locator("#firstFr").contentFrame().locator("iframe.has-background-white").contentFrame().locator("Enter email")
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for locator("#firstFr").contentFrame().locator("iframe.has-background-white").contentFrame().locator("Enter email")
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-at com.microsoft.playwright.Locator.fill(Locator.java:3165)
-at Frames_Handling.Handling_Frames_002.NestedFrames(Handling_Frames_002.java:60)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for locator("#firstFr").contentFrame().locator("iframe.has-background-white").contentFrame().locator("Enter email")
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-... 32 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+        </test-method> <!-- PopUP_Window_01 -->
+        <test-method signature="PopUP_Window_02()[pri:2, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:33 IST" name="PopUP_Window_02" finished-at="2026-05-03T16:21:42 IST" duration-ms="8600" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NestedFrames -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:Frames_Handling.Handling_Frames_002@4ac3c60d]" started-at="2026-05-02T23:33:00 IST" name="Close" finished-at="2026-05-02T23:33:01 IST" duration-ms="811" status="PASS">
+        </test-method> <!-- PopUP_Window_02 -->
+        <test-method is-config="true" signature="Cloe()[pri:0, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:42 IST" name="Cloe" finished-at="2026-05-03T16:21:43 IST" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Close -->
-      </class> <!-- Frames_Handling.Handling_Frames_002 -->
+        </test-method> <!-- Cloe -->
+      </class> <!-- Window_PopUp_Handling.Handling_Window_PopUPs_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

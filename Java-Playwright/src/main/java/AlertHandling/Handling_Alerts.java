@@ -17,7 +17,7 @@ import com.microsoft.playwright.options.LoadState;
 
 public class Handling_Alerts 
 {
-	  Playwright playwright;
+	    Playwright playwright;
 	   	BrowserType browsertype;
 	   	LaunchOptions options;
 	   	Browser browser;

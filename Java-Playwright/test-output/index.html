@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1541423935\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1074486594\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Frames_Handling.Handling_Frames_002" class="method navigator-link" hash-for-method="NestedFrames">NestedFrames</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Frames_Handling.Handling_Frames_002" class="method navigator-link" hash-for-method="BrowserLaunch">BrowserLaunch</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Window_PopUp_Handling.Handling_Window_PopUPs_001" class="method navigator-link" hash-for-method="PopUP_Window_01">PopUP_Window_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Window_PopUp_Handling.Handling_Window_PopUPs_001" class="method navigator-link" hash-for-method="PopUP_Window_02">PopUP_Window_02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,94 +123,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Frames_Handling.Handling_Frames_002</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NestedFrames">
-                  </a> <!-- NestedFrames -->
-                  <span class="method-name">NestedFrames</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for locator(&quot;#firstFr&quot;).contentFrame().locator(&quot;iframe.has-background-white&quot;).contentFrame().locator(&quot;Enter email&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3165)
-	at Frames_Handling.Handling_Frames_002.NestedFrames(Handling_Frames_002.java:60)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\progress.js:68:28)
-    at FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17316987970731194277\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-Call log:
--   - waiting for locator(&quot;#firstFr&quot;).contentFrame().locator(&quot;iframe.has-background-white&quot;).contentFrame().locator(&quot;Enter email&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 32 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Frames_Handling.Handling_Frames_002</span>
+              <span class="class-name">Window_PopUp_Handling.Handling_Window_PopUPs_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BrowserLaunch">
-                  </a> <!-- BrowserLaunch -->
-                  <span class="method-name">BrowserLaunch</span>
+                  <a name="PopUP_Window_01">
+                  </a> <!-- PopUP_Window_01 -->
+                  <span class="method-name">PopUP_Window_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PopUP_Window_02">
+                  </a> <!-- PopUP_Window_02 -->
+                  <span class="method-name">PopUP_Window_02</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,7 +148,7 @@ Call log:
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1541423935\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1074486594\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -236,7 +157,7 @@ Call log:
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Frames_Handling.Handling_Frames_002&quot;/&gt;
+      &lt;class name=&quot;Window_PopUp_Handling.Handling_Window_PopUPs_001&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -278,18 +199,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NestedFrames')
-data.setCell(0, 2, 'Frames_Handling.Handling_Frames_002')
-data.setCell(0, 3, 30030);
+data.setCell(0, 1, 'PopUP_Window_02')
+data.setCell(0, 2, 'Window_PopUp_Handling.Handling_Window_PopUPs_001')
+data.setCell(0, 3, 8600);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'BrowserLaunch')
-data.setCell(1, 2, 'Frames_Handling.Handling_Frames_002')
-data.setCell(1, 3, 4084);
+data.setCell(1, 1, 'PopUP_Window_01')
+data.setCell(1, 2, 'Window_PopUp_Handling.Handling_Window_PopUPs_001')
+data.setCell(1, 3, 6769);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -315,24 +236,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Frames_Handling.Handling_Frames_002</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Window_PopUp_Handling.Handling_Window_PopUPs_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">DriverSetUP</span>
+                <span class="method-name">ApplicationLaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">BrowserLaunch</span>
-                <span class="method-start">17723 ms</span>
+                <span class="method-name">PopUP_Window_01</span>
+                <span class="method-start">24271 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">NestedFrames</span>
-                <span class="method-start">21831 ms</span>
+                <span class="method-name">PopUP_Window_02</span>
+                <span class="method-start">31056 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">Close</span>
-                <span class="method-start">51873 ms</span>
+                <span class="method-name">Cloe</span>
+                <span class="method-start">39669 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
