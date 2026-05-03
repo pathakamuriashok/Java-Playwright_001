@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Frames_Handling.Handling_Frames_002">
+      <class name="AlertHandling.Handling_Alerts">
         <methods>
-          <include name="NestedFrames"/>
-          <include name="Close"/>
           <include name="DriverSetUP"/>
+          <include name="Close"/>
+          <include name="Handling_Alert_Promt_Accept"/>
         </methods>
-      </class> <!-- Frames_Handling.Handling_Frames_002 -->
+      </class> <!-- AlertHandling.Handling_Alerts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

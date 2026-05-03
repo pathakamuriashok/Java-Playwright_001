@@ -2,6 +2,7 @@ package AlertHandling;
 
 import java.util.Arrays;
 
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,10 +13,9 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
-import com.microsoft.playwright.Dialog;
 import com.microsoft.playwright.options.LoadState;
 
-public class Handling_Alerts 
+public class Handling_Alerts_onceDialog
 {
 	    Playwright playwright;
 	   	BrowserType browsertype;
@@ -80,6 +80,8 @@ public class Handling_Alerts
    		});
    		
    		
+   		
+   		
    	}
 	@Test(priority = 4)
    	public void Handling_Alert_Wait_Dismiss() throws InterruptedException
@@ -101,16 +103,25 @@ public class Handling_Alerts
    	@Test(priority = 5)
    	public void Handling_Alert_Promt_Accept() throws InterruptedException
    	{
-   	//	page.reload();
-   	//	page.waitForLoadState(LoadState.LOAD);
+
    		page.locator("#promtButton").click();
-   		
    		page.onceDialog(ashok->{
    			ashok.accept("ASHOK");
    		});
    		
    	}	
-   	
+	@Test(priority = 6)
+   	public void Handling_Alert_Message() throws InterruptedException
+   	{
+
+   		page.locator("#promtButton").click();
+   		
+   		page.onceDialog(ashok->{
+   			String message=ashok.message();
+   			System.out.println("Message :: "+message);
+   		});
+   		
+   	}	
        @AfterClass
        public void Close()
        {

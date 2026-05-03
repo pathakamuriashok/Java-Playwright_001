@@ -1,41 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-03T22:31:49 IST" name="Default suite" finished-at="2026-05-03T22:32:20 IST" duration-ms="30466">
+  <suite started-at="2026-05-03T22:40:00 IST" name="Default suite" finished-at="2026-05-03T22:40:35 IST" duration-ms="35392">
     <groups>
     </groups>
-    <test started-at="2026-05-03T22:31:49 IST" name="Default test" finished-at="2026-05-03T22:32:20 IST" duration-ms="30466">
-      <class name="Screenshot_Playwright.Screenshot_01">
-        <test-method is-config="true" signature="ApplicationLaunch()[pri:0, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:31:49 IST" name="ApplicationLaunch" finished-at="2026-05-03T22:32:16 IST" duration-ms="26946" status="PASS">
+    <test started-at="2026-05-03T22:40:00 IST" name="Default test" finished-at="2026-05-03T22:40:35 IST" duration-ms="35392">
+      <class name="AlertHandling.Handling_Alerts">
+        <test-method is-config="true" signature="DriverSetUP()[pri:0, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:00 IST" name="DriverSetUP" finished-at="2026-05-03T22:40:25 IST" duration-ms="25453" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ApplicationLaunch -->
-        <test-method signature="Screen_shot_001()[pri:1, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:16 IST" name="Screen_shot_001" finished-at="2026-05-03T22:32:17 IST" duration-ms="727" status="PASS">
+        </test-method> <!-- DriverSetUP -->
+        <test-method signature="BrowserLaunch()[pri:1, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:25 IST" name="BrowserLaunch" finished-at="2026-05-03T22:40:29 IST" duration-ms="3250" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Screen_shot_001 -->
-        <test-method signature="Method_01()[pri:2, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:17 IST" name="Method_01" finished-at="2026-05-03T22:32:18 IST" duration-ms="742" status="PASS">
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="Handling_Alert_Accept()[pri:2, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:29 IST" name="Handling_Alert_Accept" finished-at="2026-05-03T22:40:29 IST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Method_01 -->
-        <test-method signature="Method_02()[pri:3, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:18 IST" name="Method_02" finished-at="2026-05-03T22:32:19 IST" duration-ms="760" status="PASS">
+        </test-method> <!-- Handling_Alert_Accept -->
+        <test-method signature="Handling_Alert_Dismiss()[pri:3, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:29 IST" name="Handling_Alert_Dismiss" finished-at="2026-05-03T22:40:34 IST" duration-ms="5478" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Method_02 -->
-        <test-method signature="Method_03_With_Element()[pri:4, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:19 IST" name="Method_03_With_Element" finished-at="2026-05-03T22:32:19 IST" duration-ms="247" status="PASS">
+        </test-method> <!-- Handling_Alert_Dismiss -->
+        <test-method signature="Handling_Alert_Wait_Dismiss()[pri:4, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:34 IST" name="Handling_Alert_Wait_Dismiss" finished-at="2026-05-03T22:40:35 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Method_03_With_Element -->
-        <test-method signature="Method_04_With_Element()[pri:5, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:19 IST" name="Method_04_With_Element" finished-at="2026-05-03T22:32:19 IST" duration-ms="149" status="PASS">
+        </test-method> <!-- Handling_Alert_Wait_Dismiss -->
+        <test-method signature="Handling_Alert_Promt_Accept()[pri:5, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:35 IST" name="Handling_Alert_Promt_Accept" finished-at="2026-05-03T22:40:35 IST" duration-ms="89" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Cannot dismiss dialog which is already handled!
+  name='Error
+  stack='Error: Cannot dismiss dialog which is already handled!
+    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
+    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
+    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
+    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Cannot dismiss dialog which is already handled!
+  name='Error
+  stack='Error: Cannot dismiss dialog which is already handled!
+    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
+    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
+    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
+    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:114)
+at com.microsoft.playwright.impl.DialogImpl.dismiss(DialogImpl.java:46)
+at AlertHandling.Handling_Alerts.lambda$1(Handling_Alerts.java:79)
+at com.microsoft.playwright.impl.ListenerCollection.notify(ListenerCollection.java:45)
+at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:687)
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2543)
+at AlertHandling.Handling_Alerts.Handling_Alert_Promt_Accept(Handling_Alerts.java:108)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Cannot dismiss dialog which is already handled!
+  name='Error
+  stack='Error: Cannot dismiss dialog which is already handled!
+    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
+    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
+    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
+    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Method_04_With_Element -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:19 IST" name="Close" finished-at="2026-05-03T22:32:20 IST" duration-ms="704" status="PASS">
+        </test-method> <!-- Handling_Alert_Promt_Accept -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:AlertHandling.Handling_Alerts@3d74bf60]" started-at="2026-05-03T22:40:35 IST" name="Close" finished-at="2026-05-03T22:40:35 IST" duration-ms="512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-      </class> <!-- Screenshot_Playwright.Screenshot_01 -->
+      </class> <!-- AlertHandling.Handling_Alerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
