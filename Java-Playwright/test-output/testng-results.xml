@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-03T16:21:02 IST" name="Default suite" finished-at="2026-05-03T16:21:43 IST" duration-ms="40466">
+  <suite started-at="2026-05-03T22:31:49 IST" name="Default suite" finished-at="2026-05-03T22:32:20 IST" duration-ms="30466">
     <groups>
     </groups>
-    <test started-at="2026-05-03T16:21:02 IST" name="Default test" finished-at="2026-05-03T16:21:43 IST" duration-ms="40466">
-      <class name="Window_PopUp_Handling.Handling_Window_PopUPs_001">
-        <test-method is-config="true" signature="ApplicationLaunch()[pri:0, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:02 IST" name="ApplicationLaunch" finished-at="2026-05-03T16:21:26 IST" duration-ms="24224" status="PASS">
+    <test started-at="2026-05-03T22:31:49 IST" name="Default test" finished-at="2026-05-03T22:32:20 IST" duration-ms="30466">
+      <class name="Screenshot_Playwright.Screenshot_01">
+        <test-method is-config="true" signature="ApplicationLaunch()[pri:0, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:31:49 IST" name="ApplicationLaunch" finished-at="2026-05-03T22:32:16 IST" duration-ms="26946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApplicationLaunch -->
-        <test-method signature="PopUP_Window_01()[pri:1, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:26 IST" name="PopUP_Window_01" finished-at="2026-05-03T16:21:33 IST" duration-ms="6769" status="PASS">
+        <test-method signature="Screen_shot_001()[pri:1, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:16 IST" name="Screen_shot_001" finished-at="2026-05-03T22:32:17 IST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PopUP_Window_01 -->
-        <test-method signature="PopUP_Window_02()[pri:2, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:33 IST" name="PopUP_Window_02" finished-at="2026-05-03T16:21:42 IST" duration-ms="8600" status="PASS">
+        </test-method> <!-- Screen_shot_001 -->
+        <test-method signature="Method_01()[pri:2, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:17 IST" name="Method_01" finished-at="2026-05-03T22:32:18 IST" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PopUP_Window_02 -->
-        <test-method is-config="true" signature="Cloe()[pri:0, instance:Window_PopUp_Handling.Handling_Window_PopUPs_001@3911c2a7]" started-at="2026-05-03T16:21:42 IST" name="Cloe" finished-at="2026-05-03T16:21:43 IST" duration-ms="757" status="PASS">
+        </test-method> <!-- Method_01 -->
+        <test-method signature="Method_02()[pri:3, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:18 IST" name="Method_02" finished-at="2026-05-03T22:32:19 IST" duration-ms="760" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Cloe -->
-      </class> <!-- Window_PopUp_Handling.Handling_Window_PopUPs_001 -->
+        </test-method> <!-- Method_02 -->
+        <test-method signature="Method_03_With_Element()[pri:4, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:19 IST" name="Method_03_With_Element" finished-at="2026-05-03T22:32:19 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Method_03_With_Element -->
+        <test-method signature="Method_04_With_Element()[pri:5, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:19 IST" name="Method_04_With_Element" finished-at="2026-05-03T22:32:19 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Method_04_With_Element -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:Screenshot_Playwright.Screenshot_01@3911c2a7]" started-at="2026-05-03T22:32:19 IST" name="Close" finished-at="2026-05-03T22:32:20 IST" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- Screenshot_Playwright.Screenshot_01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
