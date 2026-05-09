@@ -12,6 +12,8 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
+import com.microsoft.playwright.Frame;
+import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.options.LoadState;
 
 public class Handling_Frames_002 {
@@ -60,7 +62,16 @@ public class Handling_Frames_002 {
 		.locator("Enter email").fill("ASHOK KUMAR");
 	    Thread.sleep(5000); 
 	}
+	@Test(priority = 3)
+	public void l()
+	{
+		FrameLocator f1=page.frameLocator("");
+		f1.locator("").click();
+       Frame mainframe=page.mainFrame(); 
+		FrameLocator f2=f1.frameLocator("");   // it it's nested frame
+		
 	
+	}
     @AfterClass
     public void Close()
     {

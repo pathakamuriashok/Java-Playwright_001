@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AlertHandling.Handling_Alerts">
+      <class name="Gestures_Playwright.Resizable_Window">
         <methods>
-          <include name="DriverSetUP"/>
-          <include name="Close"/>
-          <include name="Handling_Alert_Promt_Accept"/>
+          <include name="Qut"/>
+          <include name="Resize"/>
+          <include name="m"/>
         </methods>
-      </class> <!-- AlertHandling.Handling_Alerts -->
+      </class> <!-- Gestures_Playwright.Resizable_Window -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

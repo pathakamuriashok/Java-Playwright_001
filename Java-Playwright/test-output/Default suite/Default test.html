@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 03 22:40:00 IST 2026</td>
+<td>Started on:</td><td>Sat May 09 20:04:00 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35392 ms)</td>
+<tr><td>Total time:</td><td>39 seconds (39415 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,165 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='AlertHandling.Handling_Alerts.Handling_Alert_Promt_Accept()'><b>Handling_Alert_Promt_Accept</b><br>Test class: AlertHandling.Handling_Alerts</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cannot dismiss dialog which is already handled!
-  name=&apos;Error
-  stack=&apos;Error: Cannot dismiss dialog which is already handled!
-    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
-    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
-    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
-    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
-    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:114)
-	at com.microsoft.playwright.impl.DialogImpl.dismiss(DialogImpl.java:46)
-	at AlertHandling.Handling_Alerts.lambda$1(Handling_Alerts.java:79)
-	at com.microsoft.playwright.impl.ListenerCollection.notify(ListenerCollection.java:45)
-	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:687)
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
-	at com.microsoft.playwright.Locator.click(Locator.java:2543)
-	at AlertHandling.Handling_Alerts.Handling_Alert_Promt_Accept(Handling_Alerts.java:108)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cannot dismiss dialog which is already handled!
-  name=&apos;Error
-  stack=&apos;Error: Cannot dismiss dialog which is already handled!
-    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
-    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
-    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
-    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
-    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 42 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1486726131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1486726131'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Cannot dismiss dialog which is already handled!
-  name=&apos;Error
-  stack=&apos;Error: Cannot dismiss dialog which is already handled!
-    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
-    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
-    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
-    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
-    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:114)
-	at com.microsoft.playwright.impl.DialogImpl.dismiss(DialogImpl.java:46)
-	at AlertHandling.Handling_Alerts.lambda$1(Handling_Alerts.java:79)
-	at com.microsoft.playwright.impl.ListenerCollection.notify(ListenerCollection.java:45)
-	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:687)
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
-	at com.microsoft.playwright.Locator.click(Locator.java:2543)
-	at AlertHandling.Handling_Alerts.Handling_Alert_Promt_Accept(Handling_Alerts.java:108)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Cannot dismiss dialog which is already handled!
-  name=&apos;Error
-  stack=&apos;Error: Cannot dismiss dialog which is already handled!
-    at assert (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\utils\isomorphic\assert.js:26:11)
-    at Dialog.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dialog.js:56:29)
-    at DialogDispatcher.dismiss (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dialogDispatcher.js:41:38)
-    at C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:61
-    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\progress.js:78:28)
-    at DialogDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:95:31)
-    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-3406863916996624528\package\lib\server\dispatchers\dispatcher.js:329:39)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 42 more
-</pre></div></td>
-<td>0</td>
-<td>AlertHandling.Handling_Alerts@3d74bf60</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -235,25 +76,10 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='AlertHandling.Handling_Alerts.Handling_Alert_Accept()'><b>Handling_Alert_Accept</b><br>Test class: AlertHandling.Handling_Alerts</td>
+<td title='Gestures_Playwright.Slider_DragandDrop.Slider()'><b>Slider</b><br>Test class: Gestures_Playwright.Slider_DragandDrop</td>
 <td></td>
-<td>0</td>
-<td>AlertHandling.Handling_Alerts@3d74bf60</td></tr>
-<tr>
-<td title='AlertHandling.Handling_Alerts.BrowserLaunch()'><b>BrowserLaunch</b><br>Test class: AlertHandling.Handling_Alerts</td>
-<td></td>
-<td>3</td>
-<td>AlertHandling.Handling_Alerts@3d74bf60</td></tr>
-<tr>
-<td title='AlertHandling.Handling_Alerts.Handling_Alert_Wait_Dismiss()'><b>Handling_Alert_Wait_Dismiss</b><br>Test class: AlertHandling.Handling_Alerts</td>
-<td></td>
-<td>0</td>
-<td>AlertHandling.Handling_Alerts@3d74bf60</td></tr>
-<tr>
-<td title='AlertHandling.Handling_Alerts.Handling_Alert_Dismiss()'><b>Handling_Alert_Dismiss</b><br>Test class: AlertHandling.Handling_Alerts</td>
-<td></td>
-<td>5</td>
-<td>AlertHandling.Handling_Alerts@3d74bf60</td></tr>
+<td>15</td>
+<td>Gestures_Playwright.Slider_DragandDrop@39529185</td></tr>
 </table><p>
 </body>
 </html>
